@@ -1,4 +1,4 @@
-enum LeadType {
+export enum LeadType {
   INDIVIDUAL = 0,
   COMPANY = 1,
 }

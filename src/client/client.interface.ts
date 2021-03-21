@@ -6,18 +6,25 @@ export enum UidType {
   MAT_FISC = 3,
   OTHER = 4,
 }
+export enum genderType {
+  MALE = 'm',
+  FEMALE = 'f',
+}
+
 export interface Client extends Lead {
   fullName: string;
   uid: {
     value: string;
     type: UidType;
   };
-  birthDate: Date;
+  gender?: genderType;
+
+  birthDate?: Date;
   scolar: {
     level: number;
     diploma?: string;
   };
-  note?: string;
+  note?: number;
   adresse: {
     street: string;
     city: string;
